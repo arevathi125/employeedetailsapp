@@ -15,6 +15,7 @@ import lombok.ToString;
 public class empentity {
 	@Id
     @GeneratedValue
+    // Getting employee details
     private int id;
 	private double dob;
 	private String name;
