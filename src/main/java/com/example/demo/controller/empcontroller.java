@@ -19,13 +19,13 @@ public class empcontroller {
 @Autowired
 private empservice service;
 
-// create method for single employee
+// create method for adding single employee
 @PostMapping("/addemployee")
 public empentity addemployee(@RequestBody empentity entity) {
 	return service.createentity(entity);
 }
 
-// create method for multiple employee
+// create method for adding multiple employees
 @PostMapping("/addemployees")
 public List<empentity> addemployees(@RequestBody List<empentity> entities) {
 	return service.createentities(entities);
