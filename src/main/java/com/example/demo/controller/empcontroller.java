@@ -19,7 +19,7 @@ public class empcontroller {
 @Autowired
 private empservice service;
 
-// create method for adding single employee
+// create method for adding one employee
 @PostMapping("/addemployee")
 public empentity addemployee(@RequestBody empentity entity) {
 	return service.createentity(entity);
